@@ -1,0 +1,156 @@
+/*COMMENT BOXES*/
+.thumbnail {
+    padding:0px;
+}
+.panel {
+  position:relative;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+.panel>.panel-heading:after,.panel>.panel-heading:before{
+  position:absolute;
+  top:11px;left:-16px;
+  right:100%;
+  width:0;
+  height:0;
+  display:block;
+  content:" ";
+  border-color:transparent;
+  border-style:solid solid outset;
+  pointer-events:none;
+}
+.panel>.panel-heading:after{
+  border-width:7px;
+  border-right-color:#f7f7f7;
+  margin-top:1px;
+  margin-left:2px;
+}
+.panel>.panel-heading:before{
+  border-right-color:#ddd;
+  border-width:8px;
+}
+
+/*COMMENT BOXES*/
+
+
+#mytable{ 
+width: 600px; 
+height: 600px; 
+margin: auto; 
+border: 2px solid black; 
+} 
+#mytable td{ 
+width: 300px; 
+height: 300px; 
+border: 2px solid black;
+margin: -50px;
+padding: -50px; 
+} 
+#mytable tr{ 
+width:  300px; 
+height: 300px; 
+border: 2px solid black; 
+margin: 0px;
+padding: 0px;
+}
+
+
+h1{
+  font-size: 5em;
+  font-family: arial,helvetica;
+  color: #fff;
+  margin:0;
+}
+.flags {
+  text-align: left;
+  position: relative;
+  left:50px;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-iteration-count: 1;
+}
+
+.intro p{
+  color: #fff;
+  margin-right: 30px;
+  width: 100%;
+}
+
+table{
+  width: 100%;
+  border: 2px solid black;
+}
+td{
+  border: 2px solid black;
+}
+
+/*FORM FOR COMMENTS */
+#success_message{ display: none;}
+
+/*FORM FOR COMMENTS */
+
+
+/* Centered texts in each section
+* --------------------------------------- */
+.section{
+  text-align:center;
+}
+
+/* Overwriting styles for control arrows for slides
+* --------------------------------------- */
+.controlArrow.prev {
+  left: 50px;
+}
+.controlArrow.next{
+  right: 50px;
+}
+
+/* ------------------------------------------------------------------------ */
+img{
+  max-width: 100%;
+}
+
+.cycle {
+  background-image: url(http://ichef.bbci.co.uk/news/976/cpsprodpb/17F79/production/_92396189_migrants_composite_976.jpg);
+  height: 415px;
+  cursor: move;
+}
+.box {
+  width: 512px;
+  margin: 0 auto;
+  font-family: arial, sans-serif;
+}
+
+.button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+}
+
+#lang-button{
+   font-size: 16px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   margin-bottom: 10px;
+
+}
+
+body.en :lang(ru) {
+  display: none;
+}
+body.ru :lang(en) {
+  display: none;
+}
+

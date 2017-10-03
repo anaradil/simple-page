@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Migrant Crisis</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage full-screen navigation and sections control menu." />
+	<meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,navigation,control arrows, dots" />
+	<meta name="Resource-type" content="Document" />
+
+
+	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  	<link rel="stylesheet" type="text/css" href="my.css" />
+	<link rel="stylesheet" type="text/css" href="w3.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="scrolloverflow.js"></script>
+	<script type="text/javascript" src="jquery.fullPage.js"></script>
+	<script type="text/javascript" src="examples.js"></script>
+	<script type="text/javascript" src="form.js"></script>
+	<!--adding new comments!-->
+	<script type="text/javascript">
+		function append() {
+			var node = document.createElement("P");   
+			var textnode = document.createTextNode("smth new");
+			node.appendChild(textnode);  
+			document.getElementById("commentItem").appendChild(node);
+		}
+	</script>>
+
+</head>
+<body>
+
+<div id="fullpage">
+
+		<div class="section " id="section0">
+			<div class="w3-bar w3-center">
+				<button class="w3-btn-floating w3-teal" id="lang-button">EN</button>
+				<button class="w3-btn-floating w3-teal" id="lang-button">RU</button>
+		  </div>
+			<div class="cycle"> </div>
+			<div class="intro">
+				<h1><b>European Migrant Crisis</b></h1>
+				<p>More than a million migrants and refugees crossed into Europe in 2015, sparking a crisis as countries struggled to cope with the influx, and creating division in the EU over how best to deal with resettling people.</p>
+			</div>
+		</div>
+		<div class="section" id="section1">
+		    <div class="slide" id="slide1">
+						<div class="intro">
+							<h1>France</h1>
+							<p class="flags">
+								<img src="france.png"></>
+							</p>
+						</div>
+			  </div>
+
+		    <div class="slide" id="slide2">
+					<h1>Germany</h1>
+						<p class="flags">
+							<img src="germany.png"></>
+						</p>
+			  </div>
+			  <div class="slide" id="slide2">
+					<h1>Sweden</h1>
+						<p class="flags">
+							<img src="sweden.png"></>
+						</p>
+			  </div>
+			  <div class="slide" id="slide2">
+					<h1>Italy</h1>
+						<p class="flags">
+							<img src="italy.png"></>
+						</p>
+			  </div>
+		</div>
+	  <div class="section" id="section2">
+			<div class="intro">
+				<h1>Enjoy it</h1>
+			</div>
+	  </div>
+
+
+
+
+		<div class="section" id="section3">
+
+
+			<div>
+
+			<!-- FORM FOR COMMENTS !-->
+				<div class="container">
+
+    <form class="well form-horizontal" action="/comments" method="post"  id="contact_form">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Leave a comment!</legend>
+
+<!-- Text input-->
+
+<div class="form-group">
+  <label class="col-md-4 control-label">Name</label>  
+  <div class="col-md-4 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input  name="first_name" placeholder="Name" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<div class="form-group">
+  <label class="col-md-4 control-label">Comment</label>
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+        	<textarea class="form-control" name="comment" placeholder="Comment"></textarea>
+  </div>
+  </div>
+</div>
+
+<!-- Success message -->
+<div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thank you!.</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label"></label>
+  <div class="col-md-4">
+    <button type="submit" class="btn btn-warning" onclick="append('sometext')" >Send <span class="glyphicon glyphicon-send"></span></button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+</div>
+    </div><!-- /.container -->
+<!-- FORM FOR COMMENTS !-->
+			</div>
+	  </div>
+</div>
+
+</body>
+</html>
